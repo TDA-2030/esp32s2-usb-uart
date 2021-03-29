@@ -1,6 +1,33 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Connector_Generic_Conn_01x06
+#
+DEF Connector_Generic_Conn_01x06 J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "Connector_Generic_Conn_01x06" 0 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 50 -350 1 1 10 f
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+X Pin_6 6 -200 -300 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Generic_Conn_02x04_Odd_Even
 #
 DEF Connector_Generic_Conn_02x04_Odd_Even J 0 40 Y N 1 F N
@@ -29,23 +56,6 @@ X Pin_5 5 -200 -100 150 R 50 50 1 1 P
 X Pin_6 6 300 -100 150 L 50 50 1 1 P
 X Pin_7 7 -200 -200 150 R 50 50 1 1 P
 X Pin_8 8 300 -200 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_TestPoint
-#
-DEF Connector_TestPoint TP 0 30 N N 1 F N
-F0 "TP" 0 270 50 H V C CNN
-F1 "Connector_TestPoint" 0 200 50 H V C CNN
-F2 "" 200 0 50 H I C CNN
-F3 "" 200 0 50 H I C CNN
-$FPLIST
- Pin*
- Test*
-$ENDFPLIST
-DRAW
-C 0 130 30 0 1 0 N
-X 1 1 0 0 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -107,6 +117,28 @@ X SHIELD S1 -300 -900 200 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_Antenna_Chip
+#
+DEF Device_Antenna_Chip AE 0 40 N N 1 F N
+F0 "AE" 0 200 50 H V R CNN
+F1 "Device_Antenna_Chip" 0 125 50 H V R CNN
+F2 "" -100 175 50 H I C CNN
+F3 "" -100 175 50 H I C CNN
+DRAW
+P 2 0 1 10 -100 0 -100 -25 N
+P 2 0 1 10 -100 0 -50 0 N
+P 2 0 1 10 50 0 100 0 N
+P 2 0 1 10 50 50 50 -50 N
+P 2 0 1 0 100 -25 100 0 N
+P 2 0 1 10 100 275 100 -75 N
+P 3 0 1 10 -50 50 -50 -50 -50 0 N
+P 3 0 1 10 150 275 100 75 50 275 N
+P 5 0 1 10 -25 50 25 50 25 -50 -25 -50 -25 50 N
+X FEED 1 -100 -100 100 U 50 50 1 1 I
+X PCB_Trace 2 100 -100 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -122,6 +154,52 @@ P 2 0 1 20 -80 -30 80 -30 N
 P 2 0 1 20 -80 30 80 30 N
 X ~ 1 0 150 110 D 50 50 1 1 P
 X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Crystal_GND24_Small
+#
+DEF Device_Crystal_GND24_Small Y 0 40 Y N 1 F N
+F0 "Y" 50 175 50 H V L CNN
+F1 "Device_Crystal_GND24_Small" 50 100 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Crystal*
+$ENDFPLIST
+DRAW
+S -30 -60 30 60 0 1 0 N
+P 2 0 1 15 -50 -30 -50 30 N
+P 2 0 1 15 50 -30 50 30 N
+P 4 0 1 0 -50 -50 -50 -75 50 -75 50 -50 N
+P 4 0 1 0 -50 50 -50 75 50 75 50 50 N
+X 1 1 -100 0 50 R 30 50 1 1 P
+X 2 2 0 -100 25 U 30 50 1 1 P
+X 3 3 100 0 50 L 30 50 1 1 P
+X 4 4 0 100 25 D 30 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_L
+#
+DEF Device_L L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "Device_L" 75 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
