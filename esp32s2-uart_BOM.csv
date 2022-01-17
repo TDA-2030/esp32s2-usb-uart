@@ -18,6 +18,7 @@
 "10uf","desc","C1,C2,","C_0603_1608Metric","libref","2","2","","",
 "PESD5V0L5UY","desc","D4,D5,","SOT-363_SC-70-6","libref","6","2","","",
 "22","desc","R1,R2,","R_0402_1005Metric","libref","2","2","","",
+"5.1k","desc","R10,R11,","R_0402_1005Metric","libref","2","2","","",
 "AMS1117-3.3","desc","U1,","SOT-223-3_TabPin2","libref","4","1","","",
 "USBLC6-2SC6","desc","U2,","SOT-23-6","libref","6","1","","",
 "TestPoint","desc","TP3,","TestPoint_Pad_D1.0mm","libref","1","1","","",
