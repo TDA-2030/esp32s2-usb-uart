@@ -18,11 +18,11 @@ USB to UART board by ESP32-S2
 
 ## Pin definition
 
-| 1(IO0) | 10(TX) |
+| 1(TCK) | 10(TX) |
 | ------ | ------ |
 | 2(TDI) | 9(RX)  |
 | 3(TDO) | 8(EN)  |
-| 4(TMS) | 7(TCK) |
+| 4(TMS) | 7(IO0) |
 | 5(3V3) | 6(GND) |
 
 

@@ -916,7 +916,7 @@ Wire Wire Line
 	5700 1950 5700 1500
 Wire Wire Line
 	5700 1950 5800 1950
-Text Label 9000 3100 0    50   ~ 0
+Text Label 9950 3400 0    50   ~ 0
 IO0
 Text Label 9950 3300 0    50   ~ 0
 EN
@@ -1441,7 +1441,7 @@ Wire Wire Line
 	9650 5450 9900 5450
 Text Label 7350 3000 0    50   ~ 0
 EN
-Text Label 7350 2100 0    50   ~ 0
+Text Label 7350 2700 0    50   ~ 0
 IO0
 $Comp
 L mylib:ESP32-S2FH4 U3
@@ -1477,9 +1477,9 @@ Text Label 7350 3200 0    50   ~ 0
 TMS
 Text Label 9000 3400 0    50   ~ 0
 TMS
-Text Label 9950 3400 0    50   ~ 0
+Text Label 9000 3100 0    50   ~ 0
 TCK
-Text Label 7350 2700 0    50   ~ 0
+Text Label 7350 2100 0    50   ~ 0
 TCK
 Wire Wire Line
 	7350 2100 6800 2100
